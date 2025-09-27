@@ -1,4 +1,4 @@
-package com.hextechbank.user_service;
+package com.hextechbank.userservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
