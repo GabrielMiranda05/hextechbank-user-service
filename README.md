@@ -83,7 +83,7 @@ A seguir estão os endpoints disponíveis neste serviço.
   - **Resposta de Sucesso:** `200 OK`
   - **Resposta de Erro (se não encontrado:** `404 Not Found`
  
-  - ### Deletar Usuário
+   ### Deletar Usuário
 - **URL:** `/users/{id}`
 - **Método:** `DELETE`
 - **Resposta de Sucesso:** `204 No Content`
