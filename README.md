@@ -55,13 +55,36 @@ A seguir estão os endpoints disponíveis neste serviço.
   }
   ```
 - **Resposta de Sucesso (Success Response):** `200 OK`
+
+   ### Listar Todos os Usuários
+- **URL:** `/users`
+- **Método:** `GET`
+- **Resposta de Sucesso:** `200 OK`
+
+  ### Buscar Usuário por ID
+- **URL:** `/users/{id}`
+- **Método:** `GET`
+- **Resposta de Sucesso:** `200 OK`
+- **Resposta de Erro (se não encontrado):** `404 Not Found`
+
+  ### Atualizar Usuário
+- **URL:** `/users/{id}`
+- **Método:** `PUT`
+- **Corpo da Requisição (Request Body):**
   ```json
   {
-      "id": 1,
-      "firstName": "Jinx",
-      "lastName": "da Silva",
-      "document": "12345678900",
-      "email": "jinx@zaun.com",
-      "password": "some_strong_password",
-      "balance": null
+      "firstName": "string",
+      "lastName": "string",
+      "document": "string",
+      "email": "string",
+      "password": "string"
   }
+   ```
+  - **Resposta de Sucesso:** `200 OK`
+  - **Resposta de Erro (se não encontrado:** `404 Not Found`
+ 
+  - ### Deletar Usuário
+- **URL:** `/users/{id}`
+- **Método:** `DELETE`
+- **Resposta de Sucesso:** `204 No Content`
+- **Resposta de Erro (se não encontrado):** `404 Not Found`
